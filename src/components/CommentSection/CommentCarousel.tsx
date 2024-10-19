@@ -31,7 +31,7 @@ const CommentCarousel = ({ comments }: CommentCarouselProps) => {
         ]}
       >
         <CarouselContent className="xl:-ml-[1px]">
-          {comments.map((item) => (
+          {comments?.map((item) => (
             <CarouselItem
               key={item._id}
               className="select-none xl:basis-1/3 xl:pl-[1px]"
